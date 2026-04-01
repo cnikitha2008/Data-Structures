@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<stdlib.h>
+struct node
+{
+	int data;
+	struct node *link;
+};
+int main()
+{
+	struct node *head=0,*new_node=0;
+	new_node=(struct node*)malloc(sizeof(struct node));
+	printf("enter node data : ");
+	scanf("%d",&new_node->data);
+	new_node->link=0;
+	head=new_node;
+	printf("data-%d",new_node->data);
+	return 0;
+}
